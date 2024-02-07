@@ -12,9 +12,10 @@
                 <hr>
                 <p class="card-text">Status : <b class="{{$artist->status == 'active' ? 'text-success' : 'text-danger'}}">{{$artist->status}}</b></p>
                 <hr>
-                <p class="card-text">Total Song : <b>{{$totalSong}}</b></p>
+                <p class="card-text">Total Song : <a href="/song-artist/{{$artist->id}}"><b>{{$totalSong}}</b></a></p>
                 <hr>
-                <a href="/song" class="btn btn-danger">Back</a>
+                <a href="#" onclick="history.back()" class="btn btn-danger my-3">Back</a>
+
             </div>
         </div>
     </div>

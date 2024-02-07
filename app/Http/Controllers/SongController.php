@@ -43,4 +43,14 @@ class SongController extends Controller
         ]);
 
     }
+    public function SongArtistPage(Artist $artist)
+    {
+        return view('song-artist', [
+            "title" => "Song by Artist",
+            "active" => true,
+            "artist" => $artist,
+            "songs" => Song::where('artist_id', $artist->id)->get()
+        ]);
+
+    }
 }

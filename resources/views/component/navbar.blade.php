@@ -11,9 +11,6 @@
             <li class="nav-item {{$title == 'Songs' ? 'active' : ''}}">
                 <a class="nav-link" href="/song">Songs</a>
             </li>
-            <li class="nav-item {{$title == 'Detail' ? 'active' : ''}}">
-                <a class="nav-link" href="/detail">Detail</a>
-            </li>
         </ul>
     </div>
 </nav>

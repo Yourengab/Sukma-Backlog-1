@@ -17,5 +17,6 @@ use App\Models\Song;
 
 Route::get('/', [SongController::class, 'homePage']);
 Route::get('/song', [SongController::class, 'songPage']);
+Route::get('/song-artist/{artist}', [SongController::class, 'SongArtistPage']);
 Route::get('/detail/{song}', [SongController::class, 'detailPage']);
 Route::get('/artist/{artist}', [SongController::class, 'artistPage']);

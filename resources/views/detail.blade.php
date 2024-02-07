@@ -14,7 +14,7 @@
                 <hr>
                 <p class="card-text">Duration : <b>{{$songs->duration}} Min</b></p>
                 <hr>
-                <a href="/song" class="btn btn-danger">Back</a>
+                <a href="#" onclick="history.back()" class="btn btn-danger my-3">Back</a>
             </div>
         </div>
     </div>
